@@ -16,33 +16,29 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      child: Scaffold(
-        body: SafeArea(child: Column(
+      home: Scaffold(
+        body: SafeArea(
+            child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          //  _topWidget(),
-          Text("English ( United States)")
+            //  _topWidget(),
+            Text("English ( United States)")
           ],
         )),
       ),
     );
-     
   }
 
-  Widget _topWidget(){
-    return DropdownButton (
+  Widget _topWidget() {
+    return DropdownButton(
       value: "English (United States)",
-      items: const[
+      items: const [
         DropdownMenuItem(
-         child: Text("English (United States)"),
-         value: "English (United States)",
+          child: Text("English (United States)"),
+          value: "English (United States)",
         ),
       ],
-      onChanged: (v){},
+      onChanged: (v) {},
     );
-   
   }
 }
-
-
-
